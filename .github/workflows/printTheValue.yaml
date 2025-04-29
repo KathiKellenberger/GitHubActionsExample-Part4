@@ -8,4 +8,4 @@ jobs:
     name: Print the environment value
     runs-on: ubuntu-latest
     steps: 
-    - run: echo "${{ vars.var1 }}"
+    - run: echo "${{ vars.repovar1 }}"
