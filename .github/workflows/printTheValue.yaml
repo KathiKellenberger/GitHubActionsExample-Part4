@@ -4,8 +4,8 @@ name: Print the value
 on: workflow_dispatch
 
 jobs:
-  PrintTheValue:
-    name: Print the environment value
+  PrintTheRepoValue:
+    name: Print the environment value from the repo
     runs-on: ubuntu-latest
     steps: 
-    - run: echo "${{ vars.repovar1 }}"
+    - run: echo "${{ vars.repovar }}"
