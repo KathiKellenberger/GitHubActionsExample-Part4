@@ -15,13 +15,13 @@ jobs:
     runs-on: ubuntu-latest
     environment: test1
     steps:
-    - run: echo "${{ vars.envvar1 }}"
+    - run: echo "test1: ${{ vars.envvar1 }}"
 
   PrintTheTest2Value: 
     name: Print the value from test2
     runs-on: ubuntu-latest
     environment: test2
     steps:
-    - run: echo "${{ vars.envvar1 }}
+    - run: echo "test2: ${{ vars.envvar1 }}"
    
     
