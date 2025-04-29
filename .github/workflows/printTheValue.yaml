@@ -9,3 +9,11 @@ jobs:
     runs-on: ubuntu-latest
     steps: 
     - run: echo "${{ vars.repovar }}"
+
+  PrintTheTest1Value:
+    name: Print the value from test1
+    runs-on: ubuntu-latest
+    environment: test1
+    steps:
+    - run: echo "${{ vars.envvar1}}"
+    
